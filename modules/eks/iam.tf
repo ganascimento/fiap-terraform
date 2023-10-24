@@ -1,5 +1,5 @@
 resource "aws_iam_role" "eks_master_role" {
-  name = "example-eks-role"
+  name = "EksRole"
 
   assume_role_policy = <<EOF
 {
