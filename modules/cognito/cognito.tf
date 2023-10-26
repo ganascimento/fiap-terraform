@@ -1,7 +1,7 @@
 resource "aws_cognito_user_pool" "pool" {
-  name                = "cognito-pool"
-  username_attributes = ["email"]
-  mfa_configuration   = "OFF"
+  name              = "cognito-pool"
+  alias_attributes  = ["preferred_username"]
+  mfa_configuration = "OFF"
 
   schema {
     name                = "name"

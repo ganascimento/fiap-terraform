@@ -1,11 +1,17 @@
+provider "aws" {
+  region = "us-east-2"
+}
+
 terraform {
   required_providers {
     aws = "~> 5.0"
   }
-}
 
-provider "aws" {
-  region = "us-east-2"
+  backend "s3" {
+    bucket = "terraform-s3-state-fiap"
+    key    = "fiap-terraform"
+    region = "us-east-2"
+  }
 }
 
 module "api-gateway" {
