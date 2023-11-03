@@ -14,10 +14,6 @@ resource "aws_cognito_user_pool" "pool" {
     }
   }
 
-  software_token_mfa_configuration {
-    enabled = false
-  }
-
   admin_create_user_config {
     allow_admin_create_user_only = false
   }
