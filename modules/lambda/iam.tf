@@ -16,3 +16,8 @@ resource "aws_iam_role" "lambda_exec_role" {
 }
 POLICY
 }
+
+resource "aws_iam_role_policy_attachment" "labda_AmazonCognitoPowerUser" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonCognitoPowerUser"
+  role       = aws_iam_role.lambda_exec_role.name
+}
