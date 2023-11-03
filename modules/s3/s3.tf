@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "lambda_bucket" {
-  bucket        = "fiap-restaurant-lambda-s3-bucket"
+  bucket        = "vg-fiap-restaurant-lambda-s3-bucket"
   force_destroy = true
 
   tags = {
