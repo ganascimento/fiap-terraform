@@ -8,7 +8,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-s3-state-fiap"
+    bucket = "vg-terraform-s3-state-fiap"
     key    = "fiap-terraform"
     region = "us-east-2"
   }
